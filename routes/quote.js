@@ -3,7 +3,9 @@ const router = express.Router()
 const quoteController = require('../controllers/quoteController')
 
 router.get('/', async (req, res) => {
-    res.send('root')
+    const quoteData = await quoteController.getRandomQuote()
+    if (!quoteData) return
+    res.send(quoteData)
 })
 
 router.get('/id/:id', async (req, res) => {

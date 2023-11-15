@@ -3,6 +3,11 @@ const Quote = require('../models/Quote')
 
 const maxId = 402
 
+async function getRandomQuote() {
+    const randomId = Math.floor(Math.random() * maxId) + 1
+    return getQuoteById(randomId)
+}
+
 async function getQuoteById(id) {
     try {
         const reqConfig = {
@@ -36,4 +41,4 @@ function assureValidId(id) {
     return id % (maxId+1)
 }
 
-module.exports = {getQuoteById}
+module.exports = {getQuoteById, getRandomQuote}
