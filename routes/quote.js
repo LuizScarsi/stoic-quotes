@@ -5,7 +5,7 @@ const quoteController = require('../controllers/quoteController')
 router.get('/', async (req, res) => {
     const quoteData = await quoteController.getRandomQuote()
     if (!quoteData) return
-    res.send(quoteData)
+    res.render('index', {quote: quoteData})
 })
 
 router.get('/id/:id', async (req, res) => {
@@ -13,7 +13,7 @@ router.get('/id/:id', async (req, res) => {
         const id = parseInt(req.params.id)
         const quoteData = await quoteController.getQuoteById(id)
         if (!quoteData) return
-        res.send(quoteData)
+        res.render('index', {quote: quoteData})
     } catch(error) {
         res.redirect('/')
     }
