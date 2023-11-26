@@ -4,11 +4,11 @@
 
 <h2 align="center">Technologies</h2>
   <p align="center" >
-    <a href="https://nodejs.org/en"><img src="./assets/nodedotjs.svg" alt="nodejs" width=100></a>
-    <a href="https://axios-http.com/"><img src="./assets/axios.svg" alt="axios" width=100></a>
-    <a href="https://expressjs.com/pt-br/"><img src="./assets/express.svg" alt="express" width=100></a>
-    <a href="https://www.docker.com/"><img src="./assets/docker.svg" alt="docker" width=100></a>
-    <a href="https://www.npmjs.com/package/express-handlebars"><img src="./assets/handlebarsdotjs.svg" alt="handlebars" width=100></a>
+    <a href="https://nodejs.org/en"><img src="./assets/nodedotjs-color.svg" alt="nodejs" width=100></a>
+    <a href="https://axios-http.com/"><img src="./assets/axios-color.svg" alt="axios" width=100></a>
+    <a href="https://expressjs.com/pt-br/"><img src="./assets/express-color.svg" alt="express" width=100></a>
+    <a href="https://www.docker.com/"><img src="./assets/docker-color.svg" alt="docker" width=100></a>
+    <a href="https://www.npmjs.com/package/express-handlebars"><img src="./assets/handlebarsdotjs-color.svg" alt="handlebars" width=100></a>
   </p>
 
 ## File structure
